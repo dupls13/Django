@@ -1,5 +1,5 @@
-# blog_project/urls.py
-"""blog_project URL Configuration
+# mb_projects/urls.py
+"""mb_project URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -19,7 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', include('django.contrib.auth.urls')),
-    path('accounts/', include('accounts.urls')),
-    path('', include('blog.urls')),
+    path('', include('posts.urls')),
 ]
